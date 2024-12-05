@@ -17,3 +17,67 @@ df.hist(figsize=(12,6),bins=20,color='skyblue',edgecolor='black')
 
 ##plt.suptitle("Histrogram of Iris Dataset Features", fontsize=16)
 ##plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Implementation Steps:
+Step 1: Sign Up and Create a GitHub Account
+1. Go to GitHub.com and create a new account.
+2. Set up your profile, including username, email, and security settings.
+Step 2: Create a New Repository
+1. After logging in, click on New to create a repository.
+2. Name your repository and select its visibility (public or private).
+3. Optionally, initialize the repository with a README file.
+Step 3: Clone the Repository Locally
+Use Git to clone the repository onto your local machine:
+git clone https://github.com/username/repository-name.git
+You now have a local copy of the repository where you can make changes.
+Step 4: Make Changes and Push to GitHub
+Add, edit, or delete files in the repository.
+Use Git commands to track and push changes:
+git add .
+git commit -m "Initial commit"
+git push origin main
+The changes will be reflected in the GitHub repository.
+Step 5: Collaborate with Other Users
+1. Fork repositories to contribute to projects or use pull requests to suggest
+changes.
+2. Collaborators can review code, discuss changes, and merge contributions.
+Step 6: Use GitHub Actions (CI/CD)
+1. Set up GitHub Actions to automate testing, building, and deploying applications.
+Create a .github/workflows folder and define a YAML file for workflows.
+
+10
+
+Example workflow to run tests:
+yaml
+name: CI
+on: [push]
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v2
+- name: Run tests
+run: npm test
+Step 7: Explore GitHub Features
+ GitHub Issues: Use for tracking bugs and feature requests.
+ GitHub Projects: Manage tasks in a Kanban-style board.
+ GitHub Pages: Host static websites directly from the repository.
